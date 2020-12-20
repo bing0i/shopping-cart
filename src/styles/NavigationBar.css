@@ -1,0 +1,21 @@
+nav.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: black;
+  color: white;
+}
+
+nav.navBar > ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav.navBar > ul > .navLink {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
