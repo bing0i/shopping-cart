@@ -1,0 +1,48 @@
+.card {
+  font-family: 'Nunito', sans-serif;
+  width: 275px;
+  display: inline-block;
+  position: relative;
+  margin: 50px;
+  /* margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px; */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+.cardImage {
+  display: block;
+}
+
+.cardTitle {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.cardDescription {
+  font-weight: light;
+  font-size: 12px;
+  text-align: left;
+}
+
+.cardPrice {
+  font-size: 14px;
+  text-align: right;
+}
+
+.cardInformation {
+  padding: 5px 10px;
+}
+
+.cardButton {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 275px;
+  right: 0;
+}

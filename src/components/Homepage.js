@@ -1,6 +1,18 @@
+import Card from './Card';
+
 const Homepage = () => {
   return (
-    null
+    <div style={{textAlign: 'center'}}>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />  
+    </div>
   );
 };
 
