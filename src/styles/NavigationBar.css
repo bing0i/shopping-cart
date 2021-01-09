@@ -2,9 +2,18 @@ nav.navBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
+  font-family: 'Nunito', sans-serif;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+nav.navBar:hover {
+  background-color: black;
 }
 
 nav.navBar > ul {
