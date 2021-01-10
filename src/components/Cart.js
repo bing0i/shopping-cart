@@ -1,6 +1,21 @@
+import MiniCard from './MiniCard';
+
 const Cart = () => {
   return (
-    null
+    <div>
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+      <MiniCard />
+    </div>
   );
 };
 

@@ -1,0 +1,56 @@
+.miniCard {
+  font-family: 'Nunito', sans-serif;
+  margin: 50px auto;
+  width: 50%;
+  height: 150px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+.miniCardImage {
+  float: left;
+}
+
+.miniCardTitle {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.miniCardDescription {
+  font-weight: light;
+  font-size: 12px;
+}
+
+.miniCardPrice {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.miniCardQuantity {
+  width: 3em;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  outline: none;
+  text-align: center;
+}
+
+.miniCardQuantity::-webkit-inner-spin-button {
+  opacity: 1;
+  cursor: pointer;
+  color: red;
+}
+
+.miniCardInformation {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.miniCardFixedInformation {
+  text-align: right;
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+}
