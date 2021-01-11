@@ -1,26 +1,20 @@
 import Card from './Card';
 
-const Homepage = () => {
+const Homepage = (props) => {
+  const { items, addCartItem, changeQuantityCartItem } = props;
+
   return (
     <div style={{textAlign: 'center'}}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {items.map((item) => {
+        return (
+          <Card 
+            key={item.id} 
+            cardInformation={item} 
+            addCartItem={addCartItem}
+            changeQuantityCartItem={changeQuantityCartItem}
+          />
+        );
+      })}
     </div>
   );
 };
