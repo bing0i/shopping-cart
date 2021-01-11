@@ -7,8 +7,9 @@
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
 }
 
-.cardImage {
-  display: block;
+.cardImageFrame {
+  width: 275px;
+  height: 275px;
 }
 
 .cardTitle {
@@ -46,4 +47,11 @@
 
 .cardButton:hover {
   background-color: black;
+}
+
+.cardTitle::selection,
+.cardDescription::selection,
+.cardPrice::selection,
+.cardButton::selection {
+  background-color: transparent;
 }

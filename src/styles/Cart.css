@@ -1,0 +1,32 @@
+.cart {
+  font-family: 'Nunito', sans-serif;
+}
+
+.cartCheckoutButton {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.cartCheckoutButton:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.cartIsEmpty {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cartIsEmptyIcon {
+  color: black;
+}

@@ -4,9 +4,12 @@
   width: 50%;
   height: 150px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 
-.miniCardImage {
+.miniCardImageFrame {
+  width: 150px;
+  height: 150px;
   float: left;
 }
 
@@ -37,7 +40,6 @@
 .miniCardQuantity::-webkit-inner-spin-button {
   opacity: 1;
   cursor: pointer;
-  color: red;
 }
 
 .miniCardInformation {
@@ -53,4 +55,28 @@
   bottom: 20px;
   right: 20px;
   position: absolute;
+}
+
+.miniCardRemoveButton {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+}
+
+.miniCardRemoveButton:hover {
+  color: black;
+}
+
+.miniCardTitle::selection,
+.miniCardDescription::selection,
+.miniCardPrice::selection,
+.miniCardButton::selection {
+  background-color: transparent;
 }
