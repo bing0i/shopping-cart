@@ -15,7 +15,7 @@ const Cart = (props) => {
             &ensp;CART IS EMPTY!
           </div>
         : <div className="cartItems">
-            <Link className="cartLink" to="/checkout">
+            <Link className="cartLink" to="/shopping-cart/checkout">
               <button className="cartCheckoutButton">CHECKOUT</button>
             </Link>
             {cartItems.map((item) => {

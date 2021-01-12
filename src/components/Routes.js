@@ -6,9 +6,11 @@ import Cart from './Cart';
 import { useEffect, useState } from "react";
 
 const Routes = () => {
+  const [loaderVisibility, setLoaderVisibility] = useState('visible');
   let [items, setItems] = useState([]);
   useEffect(() => {
     const fetchCocktails = async () => {
+      setLoaderVisibility('visible');
       let cocktails = [];
       for (let i = 0; i < 26; i++) {
         let letter = String.fromCharCode(97 + i);
@@ -17,6 +19,7 @@ const Routes = () => {
         cocktails = tempCocktails.drinks !== null ? await cocktails.concat(tempCocktails.drinks) : cocktails;
       }
 
+      setLoaderVisibility('hidden');
       setItems(cocktails.map((cocktail) => {
         let { idDrink, strDrink, strDrinkThumb } = cocktail;
         let strIngredients = '';
@@ -70,10 +73,11 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <NavigationBar numberOfItems={cartItems.length} />
+      <div className="loader" style={{visibility: loaderVisibility}}></div>
       <Switch>
-        <Route exact path="/" render={() => <Homepage items={items} addCartItem={addCartItem} />} />
-        <Route exact path="/checkout" component={Checkout} />
-        <Route exact path="/cart" render={() => <Cart cartItems={cartItems} removeCartItem={removeCartItem} changeQuantityCartItem={changeQuantityCartItem} />} />
+        <Route exact path="/shopping-cart" render={() => <Homepage items={items} addCartItem={addCartItem} />} />
+        <Route exact path="/shopping-cart/checkout" component={Checkout} />
+        <Route exact path="/shopping-cart/cart" render={() => <Cart cartItems={cartItems} removeCartItem={removeCartItem} changeQuantityCartItem={changeQuantityCartItem} />} />
       </Switch>
     </BrowserRouter>
   );

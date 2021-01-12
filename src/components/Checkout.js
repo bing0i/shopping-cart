@@ -10,6 +10,10 @@ const Checkout = () => {
         fontFamily: 'Nunito, sans-serif',
         fontSize: '40px',
         marginTop: '50px',
+        position: 'absolute',
+        top: '40%',
+        textAlign: 'center',
+        width: '100%',
       }}
     >
       <FontAwesomeIcon icon={faCode} size='1x' />
