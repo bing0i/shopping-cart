@@ -1,6 +1,6 @@
 .card {
   font-family: 'Nunito', sans-serif;
-  width: 275px;
+  width: 400px;
   display: inline-block;
   position: relative;
   margin: 50px;
@@ -8,44 +8,66 @@
 }
 
 .cardImageFrame {
-  width: 275px;
-  height: 275px;
+  width: 400px;
+  height: 400px;
+}
+
+.cardImage {
+  width: 400px;
+  height: 400px;
 }
 
 .cardTitle {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px black;
   text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .cardDescription {
-  font-weight: light;
-  font-size: 12px;
+  font-size: 16px;
+  position: absolute;
+  top: 47px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  padding: 0px 20px;
+  box-sizing: border-box;
   text-align: left;
 }
 
 .cardPrice {
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  bottom: 54px;
+  right: 0px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  padding: 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
   text-align: right;
-}
-
-.cardInformation {
-  padding: 5px 10px;
 }
 
 .cardButton {
   cursor: pointer;
-  padding: 10px 0px;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: white;
-  font-size: 14px;
+  padding: 16px 0px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
   font-weight: bold;
-  position: absolute;
-  top: 236px;
   width: 100%;
 }
 
 .cardButton:hover {
+  color: white;
   background-color: black;
 }
 
