@@ -13,7 +13,7 @@ const MiniCard = (props) => {
   return (
     <div className="miniCard">
       <div className="miniCardImageFrame">
-        <img className="miniCardImage" alt={''} src={'https://picsum.photos/150/150'} />
+        <img className="miniCardImage" alt={cardInformation.title} src={cardInformation.thumbnail} />
       </div>
       <div className="miniCardInformation">
         <div className="miniCardTitle">{cardInformation.title.toUpperCase()}</div>
